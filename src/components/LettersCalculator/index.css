@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+.divContainer {
+  background-image: linear-gradient(to right, #1d976c, #93f9b9);
+  background-size: cover;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.image {
+  width: 310px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  order: 1;
+}
+.heading {
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 25px;
+  text-align: center;
+}
+.labelText {
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 13px;
+  text-align: center;
+}
+.input {
+  font-family: 'Roboto';
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #e4e7eb;
+  border-width: 1px;
+  width: 220px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  color: #ffffff;
+}
+.descriptionContainer {
+  font-family: 'Roboto';
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #219a6f;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 12px;
+  font-size: 23px;
+}
+@media screen and (min-width: 992px) {
+  .divContainer {
+    flex-direction: row;
+  }
+  .imageContainer {
+    display: flex;
+    order: 2;
+  }
+  .inputContainer {
+    order: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .image {
+    width: 520px;
+  }
+  .heading {
+    font-size: 30px;
+  }
+  .input {
+    width: 300px;
+  }
+}
